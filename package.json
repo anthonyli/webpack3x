@@ -1,0 +1,23 @@
+{
+  "name": "tuia-mobile",
+  "version": "0.0.1",
+  "description": "tuia-mobile",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab2.dui88.com:frontend/tuia-mobile.git"
+  },
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
+    "upload": "node autoupload.js",
+    "lint": "eslint --ext .js src"
+  },
+  "author": "lss <lss@duiba.com.cn>",
+  "license": "ISC",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.0",
+    "webpack": "^3.6.0",
+    "webpack-merge": "^4.1.0"
+  }
+}
