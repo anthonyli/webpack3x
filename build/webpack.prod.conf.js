@@ -1,15 +1,19 @@
 var package = require('../package.json');
-var ver = package.ver;
 
-var path = require('path')
-var utils = require('./utils')
-var webpack = require('webpack')
-var config = require('../config')
-var merge = require('webpack-merge')
-var baseWebpackConfig = require('./webpack.base.conf')
-var CopyWebpackPlugin = require('copy-webpack-plugin')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+
+var path = require('path');
+var utils = require('./utils');
+var webpack = require('webpack');
+var config = require('../config');
+var merge = require('webpack-merge');
+
+var baseWebpackConfig = require('./webpack.base.conf');
+
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
+
+
 var entryConfig = require('../config/entry')
 var skinEntryConfig = require('../config/skinEntry')
 
@@ -25,8 +29,6 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    // filename: utils.assetsPath('js/[name].' + ver + '.js'),
-    // chunkFilename: utils.assetsPath('js/[id].' + ver + '.js')
     filename: utils.assetsPath('js/[name].[chunkhash:8].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash:8].js')
   },
@@ -57,46 +59,6 @@ var webpackConfig = merge(baseWebpackConfig, {
       }
     }),
 
-    // generate dist index.html with correct asset hash for caching.
-    // you can customize output by editing /index.html
-    // see https://github.com/ampedandwired/html-webpack-plugin
-    // new HtmlWebpackPlugin({
-    //   filename: config.build.index,
-    //   // template: path.resolve(PAGE_PATH, 'index.html'),
-    //   template: resolve('src/pages/index.html'),
-    //   chunks: ['index', 'vendor', 'manifest'],
-    //   inject: true,
-    //   minify: {
-    //     // removeComments: true,
-    //     // collapseWhitespace: true,
-    //     // removeAttributeQuotes: true
-    //     // more options:
-    //     // https://github.com/kangax/html-minifier#options-quick-reference
-    //   },
-
-    //   // necessary to consistently work with multiple chunks via CommonsChunkPlugin
-    //   chunksSortMode: 'dependency'
-    // }),
-
-    // 打包公用模块
-    // new webpack.optimize.CommonsChunkPlugin({
-    //   name: 'vendor',
-    //   minChunks: function (module, count) {
-    //     // 所有被引用的node_modules中的模块，打包到vendor
-    //     return (
-    //       module.resource &&
-    //       /\.js$/.test(module.resource) &&
-    //       module.resource.indexOf(
-    //         path.join(__dirname, '../node_modules')
-    //       ) === 0
-    //     )
-    //   }
-    // }),
-    
-    // new webpack.optimize.CommonsChunkPlugin({
-    //   name: ['vendor', 'h5vendor', 'manifest']
-    // }),
-    
     // 公共文件提取
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor', // 注意不要.js后缀
