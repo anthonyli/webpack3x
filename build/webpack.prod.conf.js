@@ -14,10 +14,12 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 
 
-var entryConfig = require('../config/entry')
-var skinEntryConfig = require('../config/skinEntry')
 
-var env = config.build.env
+
+var entryConfig = require('../config/entry');
+var skinEntryConfig = require('../config/skinEntry');
+
+var env = config.build.env;
 
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -51,25 +53,11 @@ var webpackConfig = merge(baseWebpackConfig, {
       filename: utils.assetsPath('css/[name].[contenthash:8].css')
     }),
 
-    // Compress extracted CSS. We are using this plugin so that possible
-    // duplicated CSS from different components can be deduped.
-    new OptimizeCSSPlugin({
-      cssProcessorOptions: {
-        safe: true
-      }
-    }),
-
     // 公共文件提取
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor', // 注意不要.js后缀
       chunks: utils.computeChunks(entryConfig, '')
     }),
-
-    // 避免修改业务代码导致vendor的md5改变，保留文件缓存
-    // new webpack.optimize.CommonsChunkPlugin({
-    //   name: 'manifest',
-    //   chunks: ['vendor']
-    // }),
 
     new CopyWebpackPlugin([
       {

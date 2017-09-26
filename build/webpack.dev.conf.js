@@ -2,9 +2,12 @@ var utils = require('./utils')
 var webpack = require('webpack')
 var config = require('../config')
 var merge = require('webpack-merge')
+
 var baseWebpackConfig = require('./webpack.base.conf')
+
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+
 var entryConfig = require('../config/entry')
 var skinEntryConfig = require('../config/skinEntry')
 

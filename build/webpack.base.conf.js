@@ -1,8 +1,10 @@
-var path = require('path')
-var utils = require('./utils')
-var config = require('../config')
-var entryConfig = require('../config/entry')
-var skinEntryConfig = require('../config/skinEntry')
+
+var path = require('path');
+var utils = require('./utils');
+
+var config = require('../config');
+var entryConfig = require('../config/entry');
+var skinEntryConfig = require('../config/skinEntry');
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
