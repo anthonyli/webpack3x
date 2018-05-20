@@ -7,3 +7,5 @@ selenium-debug.log
 .build
 .project
 .vscode
+/build
+.history
