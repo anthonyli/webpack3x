@@ -20,7 +20,7 @@ const Loading = ({ error }) => {
             width: 450
           }}
         >
-          <img src="http://s1.wacdn.com/wis/506/e8fc685bc182bead_422x193.png" />
+          <img src='http://s1.wacdn.com/wis/506/e8fc685bc182bead_422x193.png' />
         </div>
         <div
           style={{

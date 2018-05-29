@@ -8,16 +8,16 @@ export default class CoreRouter extends React.Component {
     location: PropTypes.object.isRequired
   }
 
-  shouldComponentUpdate(nextProps) {
+  shouldComponentUpdate (nextProps) {
     return nextProps.location !== this.props.location
   }
 
-  render() {
+  render () {
     return (
       <Switch>
-        <Route component={lazyloader('test')} path="/test" />
-        <Route component={lazyloader('test1')} path="/test1" />
-        <Redirect to="/test" />
+        <Route component={lazyloader('test')} path='/test' />
+        <Route component={lazyloader('test1')} path='/test1' />
+        <Redirect to='/test' />
       </Switch>
     )
   }

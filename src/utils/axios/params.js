@@ -7,7 +7,7 @@ export default {
    * @param {Boolean} [options.skipEmpty] - 是否跳过空值
    * @returns {Object}
    */
-  parseParams(params, options = {}) {
+  parseParams (params, options = {}) {
     const { skipEmpty } = options
     const filterFunc = skipEmpty ? result => result != null && result !== '' : () => true
 
@@ -36,7 +36,7 @@ export default {
    * @param {any} value
    * @returns
    */
-  parseValue(value) {
+  parseValue (value) {
     let result = value
 
     if (typeof value === 'string') {
