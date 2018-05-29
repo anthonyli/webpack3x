@@ -1,11 +1,11 @@
 {
   "name": "webpack3.x",
   "version": "0.0.1",
-  "description": "tuia-mobile",
+  "description": "webpack3.x tutorial",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "git@gitlab2.dui88.com:frontend/tuia-mobile.git"
+    "url": "git@github.com:anthonyli/webpack3x.git"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -13,8 +13,8 @@
     "upload": "node autoupload.js",
     "lint": "eslint --ext .js src"
   },
-  "author": "lss <lss@duiba.com.cn>",
-  "license": "ISC",
+  "author": "Anthony Li <463968565@qq.com>",
+  "license": "MIT",
   "dependencies": {
     "css-loader": "^0.28.7",
     "eslint": "^4.7.2",
