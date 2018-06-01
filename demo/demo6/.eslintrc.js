@@ -1,6 +1,7 @@
 module.exports = {
-  "extends": "anb",
+  "extends": "anb/react",
   "rules": {
+    'no-console': 'warn'
   },
   "env": {
   }
