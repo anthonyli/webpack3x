@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-anb": "^1.0.10",
+    "eslint-config-anb": "^1.1.1",
     "webpack": "^3.8.1"
   }
 }
