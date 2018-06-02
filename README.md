@@ -7,3 +7,8 @@
 ## demo
 
 - [demo1webpack出入口](./demo/demo1/README.md)
+- [demo2webpack多个出入口](./demo/demo2/README.md)
+- [demo3添加ESlint eslint-config-anb](./demo/demo3/README.md)
+- [demo4添加ESlint eslint-config-anb/react](./demo/demo4/README.md)
+- [demo5添加ESlint eslint-config-anb/vue](./demo/demo5/README.md)
+- [demo6添加 babel](./demo/demo6/README.md)
