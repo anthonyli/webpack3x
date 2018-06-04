@@ -4,7 +4,7 @@
 其中包含eslint、babel、webpack3.x各种loader、plugins,以及
 会实现koa+react+redux的工程
 
-## demo
+## Demo
 
 - [demo1webpack出入口](./demo/demo1/README.md)
 - [demo2webpack多个出入口](./demo/demo2/README.md)
