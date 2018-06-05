@@ -1,5 +1,7 @@
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { render } from 'react-dom'
 
 class Test extends Component {
   static propTypes = {
@@ -13,6 +15,7 @@ class Test extends Component {
       <div
         className='test'
         onClick={() => {
+          alert(11)
         }}
       >
         {teststr}
@@ -20,4 +23,8 @@ class Test extends Component {
     )
   }
 }
-export default Test
+
+render(
+  <Test teststr='hellow world' />,
+  document.getElementById('root')
+)
