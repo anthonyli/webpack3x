@@ -6,4 +6,4 @@
 
   启用将es6模块语法转换为另一个模块类型.
 
-  将其设置为false将不会转换任何模块.
+  将其设置为false将不会转换任何模块.[preset-es2015](https://www.babeljs.cn/docs/plugins/preset-es2015)

@@ -12,3 +12,5 @@
 - [demo4添加ESlint eslint-config-anb/react](./demo/demo4/README.md)
 - [demo5添加ESlint eslint-config-anb/vue](./demo/demo5/README.md)
 - [demo6添加 babel](./demo/demo6/README.md)
+- [demo7添加 babel-loader](./demo/demo7/README.md)
+- [demo8添加 增加CSS loader相关](./demo/demo8/README.md)
